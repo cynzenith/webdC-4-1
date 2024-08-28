@@ -32,13 +32,65 @@ img {
 #aside .logo {
     width: 200px;
     height: 100px;
-    background-color: #c9c9c9;
+    /* background-color: #c9c9c9; */
+    /* border: 1px solid #333; */
 }
+/* // 로고 */
+
 #aside .nav {
     width: 200px;
     height: 550px;
-    background-color: #bcbcbc;
+    /* background-color: #bcbcbc; */
 }
+.nav ul {
+    /* width: 200px;  여기에 넓이를 넣으면 submenu에도 영향을 미친다.*/
+}
+.nav ul > li {
+    position: relative;
+}
+.nav ul > li > a {
+    display: block; 
+    width: 200px;
+    background-color: #fff;
+    padding: 10px;
+    /* border: 1px solid #333;    border로 확인 잘 할 것*/
+    text-align: center;
+}
+.nav ul > li:hover > a {
+    background-color: #3013ef;
+    color: #fff;
+}
+.nav ul > li > a:focus {
+    background-color: #3013ef;
+    color: #fff;
+}
+
+.nav ul > li > ul {
+    position: absolute;
+    left: 200px;
+    top: -41px;
+    height: 200px;
+    background-color: #3013ef;              
+
+    display: none;
+}
+/* .nav ul > li > ul > li {} */
+.nav ul > li > ul > li > a {
+    width: 200px;
+    background-color: #3013ef;
+    color: #fff;
+}
+.nav ul > li > ul > li > a:hover {
+    width: 200px;
+    background-color: #fff;
+    color: #3013ef;
+}
+.nav ul > li > ul > li > a:focus {
+    width: 200px;
+    background-color: #fff;
+    color: #3013ef;
+}
+/* /menu */
 
 /* main */
 #main {
