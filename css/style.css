@@ -73,6 +73,7 @@ img {
     background-color: #3013ef;              
 
     display: none;
+    z-index: 1000;
 }
 /* .nav ul > li > ul > li {} */
 .nav ul > li > ul > li > a {
@@ -101,8 +102,18 @@ img {
 #slider {
     width: 800px;
     height: 350px;
-    background-color: #cbc9c9;
+    /* background-color: #cbc9c9; */
+
+    overflow: hidden;
 }
+#slider .sliderWrap {
+    width: 2400px;
+    height: 350px;
+    display: flex;
+
+    /* border: 5px solid red; */
+}
+/* #slider .sliderWrap .slider{} */
 
 /* contents */
 #contents {

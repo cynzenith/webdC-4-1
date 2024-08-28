@@ -33,10 +33,24 @@
 // });  
 
 $(function(){
+
+    // 메뉴
     $(".nav ul>li").mouseover(function(){
         $(this).find(".submenu").stop().slideDown(300);
     });
     $(".nav ul>li").mouseout(function(){
         $(this).find(".submenu").stop().slideUp(100);
     });
+    
+    // 슬라이더
+    function moveSlider(){
+        $(".sliderWrap").animate({marginLeft:"-800px"}, 600, 
+            function(){
+                $(".sliderWrap").append($(".sliderWrap .slider").first());
+                $(".sliderWrap").css({marginLeft:0});
+            }
+        );
+    }
+    setInterval(moveSlider, 3000);
+
 });
