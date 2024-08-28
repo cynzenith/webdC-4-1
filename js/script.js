@@ -53,4 +53,14 @@ $(function(){
     }
     setInterval(moveSlider, 3000);
 
+    // 팝업
+    $(".popup").click(function(){
+        $(".popup-cont").show();
+    });
+    $(".popup-close").click(function(){
+        $(".popup-cont").hide();
+    });
+
+
+
 });

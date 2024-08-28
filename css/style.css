@@ -22,6 +22,7 @@ img {
     height: 650px;
 
     display: flex;
+    position: relative;
 }
 
 /* aside */
@@ -124,8 +125,78 @@ img {
 #contents .notice {
     width: 300px;
     height: 200px;
-    background-color: #c2b9b9;
+    /* background-color: #c2b9b9; */
 }
+#contents .notice h2{
+    /* border: 1px solid #333; */
+    margin: 10px 0;
+}
+#contents .notice ul{
+    width: 300px;
+    height: 150px;
+    /* border: 1px solid #333; */
+}
+#contents .notice ul li{
+    width: 300px;
+    height: 35px;
+    /* border: 1px solid #333; */
+
+    display: flex;
+    align-items: center;
+}
+#contents .notice ul li a {
+    display: block;
+    /* border: 1px solid #333; */
+    width: 250px;
+}
+#contents .notice ul li a:hover {
+    text-decoration: underline;
+}
+#contents .notice ul li span {
+    display: block;
+    /* border: 1px solid #333; */
+    width: 50px;
+    font-size: 15px;
+}
+
+.popup-cont {
+    width: 300px;
+    height: 300px;
+    background-color: #f3e580;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup-cont h1 {
+    margin: 10px;
+}
+.popup-cont ul {
+    width: 300px;
+    height: 180px;
+    /* border: 1px solid #333; */
+    padding: 10px;
+}
+.popup-cont ul li {
+    width: 250px;
+    height: 40px;
+    /* border: 1px solid #333; */
+}
+.popup-cont div {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+.popup-cont a {
+    display: block;
+    padding: 10px;
+    background-color: #9f9ce8;
+    color: #fff;
+}
+
+
+
 #contents .gall {
     width: 300px;
     height: 200px;
